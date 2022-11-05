@@ -6,6 +6,7 @@
       "outputs": ["dist/**", ".nuxt/**", ".output/**"]
     },
     "test": {
+      "dependsOn": ["@gz/css-preset#stub"],
       "outputs": []
     },
     "lint": {
