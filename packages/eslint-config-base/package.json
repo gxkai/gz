@@ -1,0 +1,41 @@
+{
+  "name": "@gz/eslint-config-base",
+  "version": "0.0.0",
+  "description": "Laughing ESLint Config",
+  "homepage": "https://laughing.com/",
+  "keywords": [
+    "laughing",
+    "eslint",
+    "javascript",
+    "typescript",
+    "styleguide",
+    "eslintconfig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gxkai/gz.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/gxkai/gz/issues"
+  },
+  "license": "MIT",
+  "author": "gxkai <ksgxk@icloud.com>",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

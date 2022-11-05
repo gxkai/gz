@@ -1,0 +1,10 @@
+{
+  "extends": "@gz/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "include": ["./.storybook/**/*", "./stories/**/*", "./**/*"]
+}

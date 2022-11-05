@@ -1,0 +1,3 @@
+<template>
+  <x-spinner/>
+</template>

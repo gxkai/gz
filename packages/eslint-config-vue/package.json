@@ -1,0 +1,42 @@
+{
+  "name": "@gz/eslint-config-vue",
+  "version": "0.0.0",
+  "description": "Gz ESLint Config for Vue 3",
+  "homepage": "https://github.com/gxkai/gz",
+  "keywords": [
+    "laughing",
+    "eslint",
+    "vue",
+    "vue3",
+    "nuxt",
+    "nuxt3",
+    "styleguide",
+    "eslintconfig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gxkai/gz.git",
+    "directory": "packages/eslint-config-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/gxkai/gz/issues"
+  },
+  "license": "MIT",
+  "author": "gxkai <ksgxk@icloud.com>",
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@gz/eslint-config-base": "workspace:*",
+    "eslint-plugin-vue": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.6.0"
+  }
+}

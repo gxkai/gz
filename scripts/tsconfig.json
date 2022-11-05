@@ -1,0 +1,10 @@
+{
+  "extends": "../packages/tsconfig/vite.json",
+  "include": ["."],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true
+  }
+}

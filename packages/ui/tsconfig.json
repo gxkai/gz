@@ -1,0 +1,9 @@
+{
+  "extends": "@gz/tsconfig/vite.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["./src/*"]
+    }
+  }
+}
