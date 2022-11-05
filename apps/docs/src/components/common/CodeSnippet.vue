@@ -10,6 +10,8 @@ setCDN('/node_modules/shiki/')
 // const t = loadTheme('./Indielayer-theme.json')
 
 const highlighter = getHighlighter({
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   theme,
   // theme,
   // langs: [{

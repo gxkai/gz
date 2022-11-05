@@ -11,7 +11,7 @@ const notifications = useNotifications('notifica')
 const icon = ref('copy')
 const animation = ref('')
 
-let timeout: number | undefined
+let timeout: number | undefined | NodeJS.Timeout
 
 onUnmounted(() => {
   clearTimeout(timeout)

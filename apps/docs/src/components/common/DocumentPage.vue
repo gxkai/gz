@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, PropType, ref } from 'vue'
 
 const props = defineProps({
   components: {
@@ -16,7 +16,7 @@ const props = defineProps({
   github: String,
   next: String,
   demos: {
-    type: Array,
+    type: Array as PropType<any>,
     default: () => [],
   },
 })
@@ -134,6 +134,7 @@ onUnmounted(() => {
 //     threshold: 1,
 //   })
 // }
+const resolveHeaders = (propertyName) => propertyName === 'props' ? headers : headersSimple
 </script>
 
 <template>
@@ -188,7 +189,7 @@ onUnmounted(() => {
 
                     <div class="text-sm font-light">
                       <x-table
-                        :headers="propertyName === 'props' ? headers : headersSimple"
+                        :headers="resolveHeaders(propertyName)"
                         :items="properties"
                       >
                         <template #item-name="{ item }">
