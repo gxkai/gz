@@ -2,6 +2,7 @@
   "name": "@gz/monorepo",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://gxkai.github.io/gz/",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
