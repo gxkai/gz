@@ -2,6 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { setCDN, getHighlighter } from 'shiki'
 import theme from './Gz-theme.json'
+import { config } from '@/config'
 // import theme from 'shiki/themes/github-light.json'
 const props = defineProps({
   code: String,
@@ -15,7 +16,7 @@ const props = defineProps({
   },
 })
 
-setCDN(`/${import.meta.env.DEV ? 'node_modules' : 'gz'}/shiki/`)
+setCDN(`${import.meta.env.DEV ? '/node_modules/' : config.basePath}shiki/`)
 // setCDN('/')
 // const version = '0.10.1'
 //

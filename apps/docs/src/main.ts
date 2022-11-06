@@ -16,6 +16,7 @@ import './assets/css/tailwind.css'
 import theme from './theme'
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
+import { config } from '@/config'
 const app = createApp(App)
 
 app.use(UI, {
@@ -39,7 +40,7 @@ let { redirect } = sessionStorage
 
 delete sessionStorage.redirect
 if (redirect && redirect !== location.pathname) {
-  redirect = redirect.replace(import.meta.env.BASE_URL, '/')
+  redirect = redirect.replace(config.basePath, '/')
 
   router.replace(redirect)
 }
