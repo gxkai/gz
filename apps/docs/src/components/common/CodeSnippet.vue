@@ -5,8 +5,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { setCDN, getHighlighter } from 'shiki'
-// import theme from './Indielayer-theme.json'
-import theme from 'shiki/themes/github-light.json'
+import theme from './Indielayer-theme.json'
+// import theme from 'shiki/themes/github-light.json'
 const props = defineProps({
   code: String,
   lang: {
@@ -19,7 +19,7 @@ const props = defineProps({
   },
 })
 
-setCDN('/node_modules/shiki/')
+setCDN(`/${import.meta.env.DEV ? 'node_modules' : 'gz'}/shiki/`)
 // setCDN('/')
 // const version = '0.10.1'
 //
