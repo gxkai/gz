@@ -33,3 +33,13 @@ app.component('CodePreview', CodePreview)
 app.component('DocumentPage', DocumentPage)
 
 app.mount('#app')
+
+// GitHub Pages redirect hack for crawler-friendly SPAs
+let { redirect } = sessionStorage
+
+delete sessionStorage.redirect
+if (redirect && redirect !== location.pathname) {
+  redirect = redirect.replace(import.meta.env.BASE_URL, '/')
+
+  router.replace(redirect)
+}
