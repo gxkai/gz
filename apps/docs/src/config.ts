@@ -15,5 +15,4 @@ export const config = {
   basePath: import.meta.env.BASE_URL,
   appName: import.meta.env.VITE_APP_NAME,
   appMachineName,
-  appVersion: import.meta.env.VITE_APP_VERSION,
 }
