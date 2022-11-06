@@ -1,9 +1,9 @@
-# @indielayer/create-ui
+# @gz/create-ui
 
-An easy way to start a Indielayer UI project
+An easy way to start a Gz UI project
 
 ## Usage
 
 ```sh
-npm init @indielayer/ui@latest
+npm init @gz/ui@latest
 ```

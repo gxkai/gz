@@ -23,7 +23,7 @@
         shadow
         external
         target="_blank"
-      >Indielayer UI</x-link>
+      >Gz UI</x-link>
     </div>
   </div>
 </template>

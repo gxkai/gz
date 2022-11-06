@@ -4,7 +4,7 @@ import gradient from 'gradient-string'
 const banner = gradient([
   { color: '#42d392', pos: 0 },
   { color: '#818cf8', pos: 1 },
-])('Indielayer UI Library')
+])('Gz UI Library')
 
 console.log(banner)
 

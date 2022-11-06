@@ -5,7 +5,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { setCDN, getHighlighter } from 'shiki'
-import theme from './Indielayer-theme.json'
+import theme from './Gz-theme.json'
 // import theme from 'shiki/themes/github-light.json'
 const props = defineProps({
   code: String,
@@ -26,7 +26,7 @@ setCDN(`/${import.meta.env.DEV ? 'node_modules' : 'gz'}/shiki/`)
 // setCDN(`https://cdn.jsdelivr.net/npm/shiki-es@${version}/dist/assets/`)
 // setCDN(`-`)
 
-// const t = loadTheme('./Indielayer-theme.json')
+// const t = loadTheme('./Gz-theme.json')
 
 const highlighter = getHighlighter({
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment

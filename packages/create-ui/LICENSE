@@ -1,10 +1,10 @@
-# @indielayer/create-ui core license
+# @gz/create-ui core license
 
-@indielayer/create-ui is released under the MIT license:
+@gz/create-ui is released under the MIT license:
 
 MIT License
 
-Copyright (c) 2021-present Indielayer
+Copyright (c) 2021-present Gz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,7 +26,7 @@ SOFTWARE.
 
 ## Licenses of bundled dependencies
 
-The published @indielayer/create-ui artifact additionally contains code with the following licenses:
+The published @gz/create-ui artifact additionally contains code with the following licenses:
 MIT
 
 ## Bundled dependencies

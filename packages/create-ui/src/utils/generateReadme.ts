@@ -26,7 +26,7 @@ export default function generateReadme({
 }) {
   let readme = `# ${projectName}
 
-This template should help get you started developing with Indielayer UI in Vue 3 and Vite.
+This template should help get you started developing with Gz UI in Vue 3 and Vite.
 
 ## Recommended IDE Setup
 

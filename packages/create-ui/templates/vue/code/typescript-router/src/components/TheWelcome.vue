@@ -8,7 +8,7 @@ import WelcomeItem from './WelcomeItem.vue'
       <x-icon icon="documentation" />
     </template>
     <template #heading>Documentation</template>
-    <x-link shadow color="emerald" target="_blank" href="https://indielayer.com/ui">Indielayer UI's documentation</x-link>
+    <x-link shadow color="emerald" target="_blank" href="https://indielayer.com/ui">Gz UI's documentation</x-link>
     and
     <x-link shadow color="emerald" target="_blank" href="https://vuejs.org/">Vue’s documentation</x-link>
     provides you with all information you need to get started.

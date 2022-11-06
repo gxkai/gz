@@ -2,7 +2,7 @@ import type { App } from 'vue'
 import type { ColorLibrary } from './composables/colors'
 import { injectColorsKey, injectIconsKey, injectThemeKey } from './composables/keys'
 
-export type IndielayerUIOptions = {
+export type GzUIOptions = {
   prefix?: string,
   components?: any,
   colors?: ColorLibrary,
@@ -10,12 +10,12 @@ export type IndielayerUIOptions = {
   theme?: any
 }
 
-const defaultOptions: IndielayerUIOptions = {
+const defaultOptions: GzUIOptions = {
   prefix: 'X',
 }
 
-const create = (createOptions: IndielayerUIOptions = {}) => {
-  const install = (app: App, installOptions: IndielayerUIOptions = {}) => {
+const create = (createOptions: GzUIOptions = {}) => {
+  const install = (app: App, installOptions: GzUIOptions = {}) => {
     const options = {
       ...defaultOptions,
       ...createOptions,
