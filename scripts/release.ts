@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-// eslint-disable-next-line import/no-named-as-default
 import prompts from 'prompts'
 import { valid } from 'semver'
 import colors from 'picocolors'
@@ -16,14 +15,14 @@ import {
   updateVersion,
 } from './releaseUtils'
 
-async function main (): Promise<void> {
+async function main(): Promise<void> {
   let targetVersion: string | undefined
 
   const { pkg }: { pkg: string } = await prompts({
     type: 'select',
     name: 'pkg',
     message: 'Select package',
-    choices: packages.map(i => ({ value: i, title: i })),
+    choices: packages.map((i) => ({ value: i, title: i })),
   })
 
   if (!pkg) { return }
@@ -47,6 +46,7 @@ async function main (): Promise<void> {
         message: 'Input custom version',
         initial: currentVersion,
       })
+
       targetVersion = res.version
     } else {
       targetVersion = release
@@ -58,7 +58,7 @@ async function main (): Promise<void> {
   }
 
   const tag =
-    pkgName === 'vite' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
+    pkgName === 'vite' ? `v${targetVersion}` : `@gz/${pkgName}@${targetVersion}`
 
   if (targetVersion.includes('beta') && !args.tag) {
     args.tag = 'beta'
@@ -93,6 +93,7 @@ async function main (): Promise<void> {
   await run('npx', changelogArgs, { cwd: pkgDir })
 
   const { stdout } = await run('git', ['diff'], { stdio: 'pipe' })
+
   if (stdout) {
     step('\nCommitting changes...')
     await runIfNotDry('git', ['add', '-A'])
@@ -100,6 +101,7 @@ async function main (): Promise<void> {
     await runIfNotDry('git', ['tag', tag])
   } else {
     console.log('No changes to commit.')
+
     return
   }
 
