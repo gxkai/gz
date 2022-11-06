@@ -39,7 +39,7 @@
       />
 
       <h3 class="text-2xl mt-8 mb-4">2. Setup Unocss</h3>
-      <p>If you do not have Unocss  installed in your project, please see the <x-link href="https://github.com/unocss/unocss" external shadow color="primary"/> before proceeding.</p>
+      <p>If you do not have Unocss  installed in your project, please see the <x-link href="https://github.com/unocss/unocss" external shadow color="primary">unocss</x-link> before proceeding.</p>
       <p class="my-4">
         Add Gz Unocss CSS preset <b>unocss.config.ts</b> to your Unocss CSS configuration file unocss.config.ts and
       </p>
