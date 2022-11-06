@@ -10,6 +10,7 @@ import DefineOptions from 'unplugin-vue-define-options/vite'
 export default defineConfig({
   base: './',
   plugins: [vue(), Unocss(), vueJsx(), DefineOptions()],
+  publicDir: 'node_modules/shiki',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

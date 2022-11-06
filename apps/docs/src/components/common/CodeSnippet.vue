@@ -1,6 +1,23 @@
 <script lang="ts">
+
+</script>
+
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
 import { setCDN, getHighlighter } from 'shiki'
-import theme from './Indielayer-theme.json'
+// import theme from './Indielayer-theme.json'
+import theme from 'shiki/themes/github-light.json'
+const props = defineProps({
+  code: String,
+  lang: {
+    type: String,
+    default: 'vue',
+  },
+  showCopyButton: {
+    type: Boolean,
+    default: true,
+  },
+})
 
 setCDN('/node_modules/shiki/')
 // setCDN('/')
@@ -37,22 +54,6 @@ const highlighter = getHighlighter({
   //   scopeName: 'source.js',
   //   path: './languages/javascript.tmLanguage.json'
   // }]
-})
-</script>
-
-<script setup lang="ts">
-import { onMounted, ref } from 'vue'
-
-const props = defineProps({
-  code: String,
-  lang: {
-    type: String,
-    default: 'vue',
-  },
-  showCopyButton: {
-    type: Boolean,
-    default: true,
-  },
 })
 
 const highlighted = ref('')
