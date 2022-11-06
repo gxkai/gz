@@ -2,8 +2,10 @@
 import { setCDN, getHighlighter } from 'shiki'
 import theme from './Indielayer-theme.json'
 
-// setCDN('/node_modules/shiki/')
+setCDN('/node_modules/shiki/')
 // setCDN('/')
+// const version = '0.10.1'
+//
 // setCDN(`https://cdn.jsdelivr.net/npm/shiki-es@${version}/dist/assets/`)
 // setCDN(`-`)
 
