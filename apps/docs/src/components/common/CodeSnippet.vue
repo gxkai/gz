@@ -1,7 +1,3 @@
-<script lang="ts">
-
-</script>
-
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { setCDN, getHighlighter } from 'shiki'
