@@ -18,7 +18,7 @@ const next = 'input'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/form"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/form"
     :title="title"
     :description="description"
     :components="components"

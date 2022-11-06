@@ -7,6 +7,6 @@
     <x-link to="link" underline>Underline</x-link>
     <x-link to="link" color="orange">Colorfull</x-link>
     <x-link to="link" shadow color="primary">Shadow</x-link>
-    <x-link href="https://github.com/gz/ui" target="_blank" external>External link</x-link>
+    <x-link href="https://github.com/gxkai/gz/ui" target="_blank" external>External link</x-link>
   </div>
 </template>

@@ -18,7 +18,7 @@ const next = 'slider'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/skeleton"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/skeleton"
     :title="title"
     :description="description"
     :components="components"

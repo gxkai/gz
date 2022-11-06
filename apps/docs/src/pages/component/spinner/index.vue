@@ -25,7 +25,7 @@ const next = 'table'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/spinner"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/spinner"
     :title="title"
     :description="description"
     :components="components"

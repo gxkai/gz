@@ -18,7 +18,7 @@ const next = 'spinner'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/slider"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/slider"
     :title="title"
     :description="description"
     :components="components"

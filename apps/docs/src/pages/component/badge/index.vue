@@ -18,7 +18,7 @@ const next = 'breadcrumbs'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/badge"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/badge"
     :title="title"
     :description="description"
     :components="components"

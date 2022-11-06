@@ -18,7 +18,7 @@ const next = 'divider'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/container"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/container"
     :title="title"
     :description="description"
     :components="components"

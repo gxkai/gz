@@ -53,7 +53,7 @@ const next = 'card'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/button"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/button"
     :title="title"
     :description="description"
     :components="components"

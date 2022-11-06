@@ -18,7 +18,7 @@ const next = 'collapse'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/card"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/card"
     :title="title"
     :description="description"
     :components="components"

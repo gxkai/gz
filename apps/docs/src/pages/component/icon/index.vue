@@ -25,7 +25,7 @@ const next = 'link'
 
 <template>
   <document-page
-    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/icon"
+    github="https://github.com/gxkai/gz/ui/blob/main/packages/docs/src/pages/component/icon"
     :title="title"
     :description="description"
     :components="components"
