@@ -18,7 +18,7 @@
         target="_blank"
       >Vue 3</x-link>
       <x-link
-        href="https://indielayer.com/ui"
+        href="https://gz.com/ui"
         color="emerald"
         shadow
         external

@@ -18,7 +18,7 @@ const next = 'menu'
 
 <template>
   <document-page
-    github="https://github.com/indielayer/ui/blob/main/packages/docs/src/pages/component/link"
+    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/link"
     :title="title"
     :description="description"
     :components="components"

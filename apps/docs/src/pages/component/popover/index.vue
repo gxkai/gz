@@ -18,7 +18,7 @@ const next = 'progress'
 
 <template>
   <document-page
-    github="https://github.com/indielayer/ui/blob/main/packages/docs/src/pages/component/popover"
+    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/popover"
     :title="title"
     :description="description"
     :components="components"

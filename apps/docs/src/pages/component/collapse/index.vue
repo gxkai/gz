@@ -25,7 +25,7 @@ const next = 'container'
 
 <template>
   <document-page
-    github="https://github.com/indielayer/ui/blob/main/packages/docs/src/pages/component/collapse"
+    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/collapse"
     :title="title"
     :description="description"
     :components="components"

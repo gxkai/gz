@@ -32,7 +32,7 @@ const next = 'drawer'
 
 <template>
   <document-page
-    github="https://github.com/indielayer/ui/blob/main/packages/docs/src/pages/component/divider"
+    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/divider"
     :title="title"
     :description="description"
     :components="components"

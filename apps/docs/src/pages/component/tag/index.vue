@@ -18,7 +18,7 @@ const next = 'tooltip'
 
 <template>
   <document-page
-    github="https://github.com/indielayer/ui/blob/main/packages/docs/src/pages/component/tag"
+    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/tag"
     :title="title"
     :description="description"
     :components="components"

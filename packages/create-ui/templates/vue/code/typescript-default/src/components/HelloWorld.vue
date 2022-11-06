@@ -11,7 +11,7 @@ defineProps<{
       You’ve successfully created a project with
       <x-link shadow color="emerald" target="_blank" href="https://vitejs.dev/">Vite</x-link> +
       <x-link shadow color="emerald" target="_blank" href="https://vuejs.org/">Vue 3</x-link> +
-      <x-link shadow color="emerald" target="_blank" href="https://indielayer.com/ui">Gz UI</x-link>.
+      <x-link shadow color="emerald" target="_blank" href="https://gz.com/ui">Gz UI</x-link>.
     </h3>
   </div>
 </template>

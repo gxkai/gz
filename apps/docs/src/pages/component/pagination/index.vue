@@ -18,7 +18,7 @@ const next = 'popover'
 
 <template>
   <document-page
-    github="https://github.com/indielayer/ui/blob/main/packages/docs/src/pages/component/pagination"
+    github="https://github.com/gz/ui/blob/main/packages/docs/src/pages/component/pagination"
     :title="title"
     :description="description"
     :components="components"

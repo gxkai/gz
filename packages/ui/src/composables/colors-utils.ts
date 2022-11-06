@@ -31,7 +31,7 @@ export const colorShade = (color: string, percentage: number) => {
 }
 
 export const shades: Tone[] = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900']
-export const indielayerColors = ['primary', 'secondary', 'success', 'warning', 'error']
+export const gzColors = ['primary', 'secondary', 'success', 'warning', 'error']
 
 // calculate custom colors
 // export function calculateColors(): ColorLibrary {
@@ -41,7 +41,7 @@ export const indielayerColors = ['primary', 'secondary', 'success', 'warning', '
 
 //   document.body.appendChild(e)
 
-//   indielayerColors.forEach((color) => {
+//   gzColors.forEach((color) => {
 //     const c: ColorPalette = { ...unoColors.gray }
 
 //     shades.forEach((shade) => {

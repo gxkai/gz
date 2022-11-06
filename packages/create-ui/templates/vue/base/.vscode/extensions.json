@@ -2,7 +2,7 @@
   "recommendations": [
     "vue.volar",
     "Vue.vscode-typescript-vue-plugin",
-    "indielayer.vscode-indielayer-theme",
-    "indielayer.indielayer-vue-snippets"
+    "gz.vscode-gz-theme",
+    "gz.gz-vue-snippets"
   ]
 }
