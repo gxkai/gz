@@ -20,10 +20,10 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'lib',
+    outDir: 'dist',
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'LaughingUI',
+      name: 'GzUI',
       formats: ['es', 'cjs'],
       fileName: (format) => {
         return `[name].${format}.js`
