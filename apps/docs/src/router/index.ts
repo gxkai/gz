@@ -65,7 +65,7 @@ const routes: RouteRecordRaw[] = [{
 }]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/gz/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
