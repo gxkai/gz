@@ -290,7 +290,6 @@ importers:
 
   packages/ui:
     specifiers:
-      '@guzh/tsconfig': workspace:*
       '@types/mdx': ^2.0.2
       '@types/ramda': 0.28.18
       '@vueuse/core': 9.4.0
@@ -298,7 +297,6 @@ importers:
       postcss-nested: 6.0.0
       ramda: 0.28.0
     dependencies:
-      '@guzh/tsconfig': link:../tsconfig
       '@types/mdx': 2.0.2
       '@types/ramda': 0.28.18
       '@vueuse/core': 9.4.0
