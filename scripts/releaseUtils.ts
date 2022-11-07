@@ -29,7 +29,9 @@ export const realPackages = [
   'ui',
   'vitest',
   'pinia-store',
-  'eslint-config',
+  'eslint-config-base',
+  'eslint-config-custom',
+  'eslint-config-vue',
   'tsconfig',
   'css-preset',
 ]

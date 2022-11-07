@@ -58,7 +58,7 @@ async function main(): Promise<void> {
   }
 
   const tag =
-    pkgName === 'vite' ? `v${targetVersion}` : `@guzh/${pkgName}@${targetVersion}`
+    pkgName === 'vite' ? `v${targetVersion}` : `${pkgName}@${targetVersion}`
 
   if (targetVersion.includes('beta') && !args.tag) {
     args.tag = 'beta'
