@@ -119,7 +119,7 @@ async function main(): Promise<void> {
     )
   }
   step('\nPushing to npm...')
-  await publishPackage(pkgDir, tag)
+  await publishPackage(pkgDir)
   console.log(
     colors.green(
       `\nPushed, https://www.npmjs.com/package/${pkgName}`,
