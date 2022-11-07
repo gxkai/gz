@@ -2,7 +2,7 @@
   "recommendations": [
     "vue.volar",
     "Vue.vscode-typescript-vue-plugin",
-    "gz.vscode-gz-theme",
-    "gz.gz-vue-snippets"
+    "gz.vscode-@gxkai/theme",
+    "gz.@gxkai/vue-snippets"
   ]
 }

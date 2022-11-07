@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "node_modules/gz-ui/volar.d.ts"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "node_modules/@gxkai/ui/volar.d.ts"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,

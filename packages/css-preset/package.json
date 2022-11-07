@@ -1,5 +1,5 @@
 {
-  "name": "gz-css-preset",
+  "name": "@gxkai/css-preset",
   "version": "0.0.0",
   "scripts": {
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
@@ -27,7 +27,7 @@
     "*.css"
   ],
   "devDependencies": {
-    "gz-tsconfig": "workspace:*",
+    "@gxkai/tsconfig": "workspace:*",
     "@unocss/core": "0.46.2",
     "@unocss/nuxt": "0.46.2",
     "@unocss/preset-mini": "0.46.2",

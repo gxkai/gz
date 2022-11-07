@@ -1,5 +1,5 @@
 {
-  "name": "gz-pinia-store",
+  "name": "@gxkai/pinia-store",
   "version": "0.0.0",
   "private": true,
   "main": "index.ts",

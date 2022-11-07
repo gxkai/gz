@@ -1,9 +1,9 @@
-# gz-create-ui
+# @gxkai/create-ui
 
 An easy way to start a Gz UI project
 
 ## Usage
 
 ```sh
-npm init gz-ui@latest
+npm init @gxkai/ui@latest
 ```

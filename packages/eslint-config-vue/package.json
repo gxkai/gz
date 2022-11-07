@@ -1,5 +1,5 @@
 {
-  "name": "gz-eslint-config-vue",
+  "name": "@gxkai/eslint-config-vue",
   "version": "0.0.0",
   "description": "Gz ESLint Config for Vue 3",
   "homepage": "https://github.com/gxkai/gz",
@@ -30,7 +30,7 @@
     "access": "public"
   },
   "dependencies": {
-    "gz-eslint-config-base": "workspace:*",
+    "@gxkai/eslint-config-base": "workspace:*",
     "eslint-plugin-vue": "^8.2.0"
   },
   "devDependencies": {
