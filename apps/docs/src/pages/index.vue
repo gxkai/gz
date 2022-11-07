@@ -13,9 +13,9 @@
           target="_blank"
           shadow
           color="primary"
-        >@gxkai/create-ui</x-link>, the official Gz UI project scaffolding tool. You will be presented with prompts for a number of optional features such as TypeScript.
+        >@guzh/create-ui</x-link>, the official Gz UI project scaffolding tool. You will be presented with prompts for a number of optional features such as TypeScript.
       </p>
-      <code-snippet :code="`npm init @gxkai/ui`" lang="bash"/>
+      <code-snippet :code="`npm init @guzh/ui`" lang="bash"/>
       <pre class="bg-slate-600 text-slate-50 text-xs mt-4 px-4 py-2 rounded-md">? Project type: › - Use arrow-keys. Return to submit.
 ❯   Vue 3
     Nuxt 3</pre>
@@ -26,15 +26,15 @@
         :snippets="[{
           label: 'npm',
           lang: 'bash',
-          code: 'npm install @gxkai/ui'
+          code: 'npm install @guzh/ui'
         }, {
           label: 'yarn',
           lang: 'bash',
-          code: 'yarn add @gxkai/ui'
+          code: 'yarn add @guzh/ui'
         }, {
           label: 'pnpm',
           lang: 'bash',
-          code: 'pnpm install @gxkai/ui'
+          code: 'pnpm install @guzh/ui'
         }]"
       />
 
@@ -47,7 +47,7 @@
         lang="js"
         :code="`// unocss.config.ts
 import { defineConfig } from 'unocss'
-import { extendUnocssOptions } from '@gxkai/css-preset'
+import { extendUnocssOptions } from '@guzh/css-preset'
 
 export default defineConfig({
   ...extendUnocssOptions(),
@@ -63,7 +63,7 @@ export default defineConfig({
       <code-snippet
         lang="js"
         :code="`import { createApp } from 'vue'
-import UI from '@gxkai/ui'
+import UI from '@guzh/ui'
 
 const app = createApp(App)
 
@@ -75,12 +75,12 @@ app.use(UI, {
       <code-snippet
         lang="js"
         :code="`import { defineNuxtConfig } from 'nuxt'
-import { colors } from '@gxkai/ui'
+import { colors } from '@guzh/ui'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
-    ['@gxkai/ui/nuxt', {
+    ['@guzh/ui/nuxt', {
       prefix: 'X',
       theme: {
         colors: {
@@ -110,7 +110,7 @@ export default defineNuxtConfig({
       <code-snippet
         lang="js"
         :code="`import { createApp } from 'vue'
-import { createUI, XButton, XAlert } from '@gxkai/ui'
+import { createUI, XButton, XAlert } from '@guzh/ui'
 
 const app = createApp(App)
 

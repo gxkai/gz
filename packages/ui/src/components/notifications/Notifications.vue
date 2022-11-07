@@ -287,7 +287,7 @@ defineExpose({ log, info, success, warn, warning: warn, error })
                 dark:text-[color:var(--x-notification-dark-action)]
                 dark:hover:text-[color:var(--x-notification-dark-action-hover)]
               "
-            @click="notification.action.onClick"
+            @click="notification.action?.onClick"
           >
             {{ notification.action.label }}
           </div>

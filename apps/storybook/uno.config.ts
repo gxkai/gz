@@ -1,5 +1,5 @@
 import { defineConfig } from 'unocss'
-import { extendUnocssOptions } from '@gxkai/css-preset'
+import { extendUnocssOptions } from '@guzh/css-preset'
 
 export default defineConfig({
   ...extendUnocssOptions(),

@@ -2,7 +2,7 @@
 const { defineConfig } = require('eslint-define-config')
 
 module.exports = defineConfig({
-  extends: ['@gxkai/eslint-config-vue'],
+  extends: ['@guzh/eslint-config-vue'],
   rules: {
     // '@typescript-eslint/ban-ts-comment': 'off',
     // 'comma-dangle': [

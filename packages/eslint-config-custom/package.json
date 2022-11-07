@@ -1,5 +1,5 @@
 {
-  "name": "@gxkai/eslint-config-custom",
+  "name": "@guzh/eslint-config-custom",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "eslint-define-config": "1.11.0",
     "typescript": "4.8.4",
     "prettier": "2.7.1",
-    "@gxkai/eslint-config-vue": "workspace:*"
+    "@guzh/eslint-config-vue": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

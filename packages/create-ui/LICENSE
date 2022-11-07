@@ -1,6 +1,6 @@
-# @gxkai/create-ui core license
+# @guzh/create-ui core license
 
-@gxkai/create-ui is released under the MIT license:
+@guzh/create-ui is released under the MIT license:
 
 MIT License
 
@@ -26,7 +26,7 @@ SOFTWARE.
 
 ## Licenses of bundled dependencies
 
-The published @gxkai/create-ui artifact additionally contains code with the following licenses:
+The published @guzh/create-ui artifact additionally contains code with the following licenses:
 MIT
 
 ## Bundled dependencies

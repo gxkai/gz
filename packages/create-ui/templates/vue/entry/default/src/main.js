@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import UI, { colors } from '@gxkai/ui'
+import UI, { colors } from '@guzh/ui'
 import App from './App.vue'
 
 // css

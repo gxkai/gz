@@ -6,7 +6,7 @@
       "outputs": ["dist/**", ".nuxt/**", ".output/**"]
     },
     "test": {
-      "dependsOn": ["@gxkai/css-preset#stub"],
+      "dependsOn": ["@guzh/css-preset#stub"],
       "outputs": []
     },
     "lint": {
@@ -16,7 +16,7 @@
       "cache": false
     },
     "dev": {
-      "dependsOn": ["@gxkai/css-preset#stub"],
+      "dependsOn": ["@guzh/css-preset#stub"],
       "cache": false
     },
     "start": {

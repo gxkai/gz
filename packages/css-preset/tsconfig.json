@@ -1,5 +1,5 @@
 {
-  "extends": "@gxkai/tsconfig/vite.json",
+  "extends": "@guzh/tsconfig/vite.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

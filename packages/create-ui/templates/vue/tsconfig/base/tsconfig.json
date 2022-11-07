@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "node_modules/@gxkai/ui/volar.d.ts"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "node_modules/@guzh/ui/volar.d.ts"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

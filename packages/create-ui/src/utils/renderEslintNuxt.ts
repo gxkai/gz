@@ -18,7 +18,7 @@ interface ESLintConfig extends Linter.Config {
 }
 const config: ESLintConfig = {
   root: true,
-  extends: ['@gxkai/eslint-config-vue'],
+  extends: ['@guzh/eslint-config-vue'],
   env: {
     'vue/setup-compiler-macros': true,
   },

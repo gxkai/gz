@@ -15,14 +15,14 @@ function addEslintDependency(name) {
 
 addEslintDependency('eslint')
 addEslintDependency('eslint-plugin-vue')
-addEslintDependency('@gxkai/eslint-config-vue')
+addEslintDependency('@guzh/eslint-config-vue')
 
 interface ESLintConfig extends Linter.Config {
   extends: string[]
 }
 const config: ESLintConfig = {
   root: true,
-  extends: ['@gxkai/eslint-config-vue'],
+  extends: ['@guzh/eslint-config-vue'],
   env: {
     'vue/setup-compiler-macros': true,
   },

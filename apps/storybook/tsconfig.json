@@ -1,5 +1,5 @@
 {
-  "extends": "@gxkai/tsconfig/base.json",
+  "extends": "@guzh/tsconfig/base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

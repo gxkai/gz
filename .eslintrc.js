@@ -5,7 +5,7 @@ const apps = 'apps/'
 const nuxtPath = `${apps}/web`
 
 module.exports = defineConfig({
-  extends: ['@gxkai/eslint-config-custom'],
+  extends: ['@guzh/eslint-config-custom'],
   root: true,
   overrides: [
     // Welche Regeln brauchen wir?
