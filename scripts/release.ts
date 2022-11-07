@@ -8,7 +8,7 @@ import {
   getVersionChoices,
   isDryRun,
   logRecentCommits,
-  packages,
+  packages, publishPackage,
   run,
   runIfNotDry,
   step,
@@ -118,8 +118,13 @@ async function main(): Promise<void> {
       ),
     )
   }
-
-  console.log()
+  step('\nPushing to npm...')
+  await publishPackage(pkgDir, tag)
+  console.log(
+    colors.green(
+      `\nPushed, https://www.npmjs.com/package/${pkgName}`,
+    ),
+  )
 }
 
 main().catch((err) => {
