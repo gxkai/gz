@@ -65,12 +65,12 @@ export function getPackageInfo(pkgName: string) {
   const currentVersion = pkg.version
 
   if (pkg.private) {
-    throw new Error(`Package ${pkgName} is private`)
+    throw new Error(`Package ${pkg.name} is private`)
   }
 
   return {
     pkg,
-    pkgName,
+    pkgName: pkg.name,
     pkgDir,
     pkgPath,
     currentVersion,
