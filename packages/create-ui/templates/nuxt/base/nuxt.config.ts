@@ -1,11 +1,11 @@
 import { defineNuxtConfig } from 'nuxt'
-import { colors } from '@gz/ui'
+import { colors } from 'gz-ui'
 import icons from './icons'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
-    ['@gz/ui/nuxt', {
+    ['gz-ui/nuxt', {
       icons,
       prefix: 'X',
       theme: {

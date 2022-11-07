@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import UI, { colors } from '@gz/ui'
+import UI, { colors } from 'gz-ui'
 import App from './App.vue'
 
 // css

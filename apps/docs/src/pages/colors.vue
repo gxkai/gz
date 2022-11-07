@@ -73,7 +73,7 @@ function copyPalette(val: any) {
       <code-snippet
         lang="js"
         :code="`import { createApp } from 'vue'
-import UI, { colors } from '@gz/ui'
+import UI, { colors } from 'gz-ui'
 
 const app = createApp(App)
 

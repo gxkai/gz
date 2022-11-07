@@ -12,8 +12,8 @@
   "dependencies": {
     "vue": "^3.2.33",
     "vue-router": "^4.0.14",
-    "@gz/css-preset": "workspace:*",
-    "@gz/pinia-store": "workspace:*"
+    "gz-css-preset": "workspace:*",
+    "gz-pinia-store": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^16.11.27",

@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url'
 
 export default defineNuxtModule({
   meta: {
-    name: '@gz/ui',
+    name: 'gz-ui',
     configKey: 'gz',
     compatibility: {
       nuxt: '^3.0.0-rc.1',

@@ -68,7 +68,7 @@ export default {
 }`,
       installExample: `// main.js
 import { createApp } from 'vue'
-import UI from '@gz/ui'
+import UI from 'gz-ui'
 import icons from './icons'
 
 const app = createApp(App)

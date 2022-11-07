@@ -39,14 +39,14 @@ await esbuild.build({
         output: {
           file: 'LICENSE',
           template(allDependencies) {
-            // There's a bug in the plugin that it also includes the `@gz/create-ui` package itself
-            const dependencies = allDependencies.filter((d) => d.packageJson.name !== '@gz/create-ui')
+            // There's a bug in the plugin that it also includes the `gz-create-ui` package itself
+            const dependencies = allDependencies.filter((d) => d.packageJson.name !== 'gz-create-ui')
             const licenseText =
-              '# @gz/create-ui core license\n\n' +
-              '@gz/create-ui is released under the MIT license:\n\n' +
+              '# gz-create-ui core license\n\n' +
+              'gz-create-ui is released under the MIT license:\n\n' +
               CORE_LICENSE +
               '\n## Licenses of bundled dependencies\n\n' +
-              'The published @gz/create-ui artifact additionally contains code with the following licenses:\n' +
+              'The published gz-create-ui artifact additionally contains code with the following licenses:\n' +
               [...new Set(dependencies.map((dependency) => dependency.packageJson.license))].join(
                 ', '
               ) +

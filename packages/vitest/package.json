@@ -1,5 +1,5 @@
 {
-  "name": "@gz/vitest",
+  "name": "gz-vitest",
   "version": "0.0.0",
   "scripts": {
     "test": "vitest --environment jsdom --run",
@@ -20,7 +20,7 @@
     "@types/jsdom": "20.0.0",
     "@vitejs/plugin-vue": "3.2.0",
     "@vue/test-utils": "2.2.1",
-    "@gz/tsconfig": "workspace:*",
+    "gz-tsconfig": "workspace:*",
     "jsdom": "20.0.2",
     "pinia": "2.0.23",
     "typescript": "4.8.4",

@@ -1,5 +1,5 @@
 {
-  "name": "@gz/eslint-config-base",
+  "name": "gz-eslint-config-base",
   "version": "0.0.0",
   "description": "Laughing ESLint Config",
   "homepage": "https://laughing.com/",
