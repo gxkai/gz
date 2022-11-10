@@ -45,3 +45,4 @@ storybook-static
 /.idea/vue-turbo-starter.iml
 /.idea/gz.iml
 /apps/sites/docs/
+/apps/sites/storybook/
