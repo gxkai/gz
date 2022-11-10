@@ -44,3 +44,4 @@ storybook-static
 /.idea/vcs.xml
 /.idea/vue-turbo-starter.iml
 /.idea/gz.iml
+/apps/sites/docs/

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3001",
-    "build": "vue-tsc --noEmit && vite build &&  cp -r node_modules/shiki ../dist/docs",
+    "build": "vue-tsc --noEmit && vite build &&  cp -r node_modules/shiki ../sites/docs",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
