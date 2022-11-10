@@ -12,7 +12,7 @@ export const config = {
   dev,
   prod: import.meta.env.PROD,
   mode: import.meta.env.MODE,
-  basePath: import.meta.env.BASE_URL,
+  basePath: '/gz/docs/',//import.meta.env.BASE_URL,
   appName: import.meta.env.VITE_APP_NAME,
   appMachineName,
 }

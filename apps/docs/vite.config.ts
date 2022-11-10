@@ -8,7 +8,7 @@ import DefineOptions from 'unplugin-vue-define-options/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/gz/',
+  base: './',
   plugins: [vue(), Unocss(), vueJsx(), DefineOptions()],
   resolve: {
     alias: {
@@ -34,5 +34,8 @@ export default defineConfig({
         require('postcss-nested'),
       ],
     },
+  },
+  build: {
+    outDir: '../dist/docs',
   },
 })

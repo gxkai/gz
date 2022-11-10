@@ -10,6 +10,7 @@ import IconsPage from '@/pages/icons.vue'
 import PlayPage from '@/pages/play.vue'
 import TypographyPage from '@/pages/typography.vue'
 import ColorsPage from '@/pages/colors.vue'
+import { config } from '@/config'
 
 const pages = import.meta.globEager('@/pages/component/*/index.vue')
 const componentPages = Object.keys(pages).map((path) => {
@@ -65,7 +66,7 @@ const routes: RouteRecordRaw[] = [{
 }]
 
 const router = createRouter({
-  history: createWebHistory('/gz/'),
+  history: createWebHistory(config.basePath),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
