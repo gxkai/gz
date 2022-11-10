@@ -39,7 +39,6 @@ app.mount('#app')
 let { redirect } = sessionStorage
 
 delete sessionStorage.redirect
-console.log(redirect, config.basePath)
 if (redirect && redirect !== location.pathname) {
   redirect = redirect.replace(config.basePath, '/')
 
