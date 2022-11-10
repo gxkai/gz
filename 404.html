@@ -6,7 +6,7 @@
   <title>Vite App</title>
   <script>
     sessionStorage.redirect = location.pathname;
-    window.location.replace(location.pathname.replace(/(\/.*\/.*\/).*/, '$1'))
+    window.location.replace(`${window.location.host}${location.pathname.replace(/(\/.*\/.*\/).*/, '$1')}`)
   </script>
 <!--  <meta http-equiv="refresh" content="0;URL='/gz/'"></meta>-->
 </head>
