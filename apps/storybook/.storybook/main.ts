@@ -16,10 +16,13 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
   ],
-  viteFinal(config) {
+  viteFinal(config, { configType }) {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@ui': resolve(__dirname, '../../../packages/ui/src'),
+    }
+    if (configType === 'PRODUCTION') {
+      config.base = './'
     }
 
     config.plugins = config.plugins ?? []
