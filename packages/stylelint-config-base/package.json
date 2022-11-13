@@ -1,0 +1,45 @@
+{
+  "name": "@guzh/stylelint-config-base",
+  "version": "0.0.0",
+  "description": "Gz ESLint Config",
+  "homepage": "https://github.com/gxkai/gz.git",
+  "keywords": [
+    "gz",
+    "eslint",
+    "javascript",
+    "typescript",
+    "styleguide",
+    "eslintconfig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gxkai/gz.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/gxkai/gz/issues"
+  },
+  "license": "MIT",
+  "author": "gxkai <ksgxk@icloud.com>",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "stylelint": "^14.6.0",
+    "stylelint-config-html": "^1.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-less": "^1.0.5",
+    "stylelint-order": "^5.0.0",
+    "postcss": "^8.4.12",
+    "postcss-html": "^1.3.0",
+    "postcss-less": "^6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
