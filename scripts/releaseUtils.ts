@@ -32,6 +32,7 @@ export const realPackages = [
   'eslint-config-base',
   'eslint-config-custom',
   'eslint-config-vue',
+  'stylelint-config-base',
   'tsconfig',
   'css-preset',
 ]

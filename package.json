@@ -23,6 +23,7 @@
     "@types/prompts": "2.4.1",
     "@types/semver": "7.3.13",
     "@guzh/eslint-config-custom": "workspace:*",
+    "@guzh/create-ui": "workspace:*",
     "conventional-changelog-cli": "2.2.2",
     "execa": "6.1.0",
     "picocolors": "1.0.0",

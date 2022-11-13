@@ -1,6 +1,6 @@
 {
   "name": "@guzh/eslint-config-vue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Gz ESLint Config for Vue 3",
   "homepage": "https://github.com/gxkai/gz",
   "keywords": [

@@ -29,6 +29,9 @@ export default async (options) => {
     needsCypress?: boolean
     needsEslint?: boolean
     needsPrettier?: boolean
+    needsStylelint?: boolean
+    needsLslint?: boolean
+    needsPkglint?: boolean
   } = {}
 
   try {
@@ -84,7 +87,7 @@ export default async (options) => {
           name: 'needsTypeScript',
           type: () => (isFeatureFlagsUsed ? null : 'toggle'),
           message: 'Add TypeScript?',
-          initial: false,
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -92,7 +95,7 @@ export default async (options) => {
           name: 'needsJsx',
           type: () => (isFeatureFlagsUsed ? null : 'toggle'),
           message: 'Add JSX Support?',
-          initial: false,
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -100,7 +103,7 @@ export default async (options) => {
           name: 'needsRouter',
           type: () => (isFeatureFlagsUsed ? null : 'toggle'),
           message: 'Add Vue Router for Single Page Application development?',
-          initial: false,
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -108,7 +111,7 @@ export default async (options) => {
           name: 'needsPinia',
           type: () => (isFeatureFlagsUsed ? null : 'toggle'),
           message: 'Add Pinia for state management?',
-          initial: false,
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -116,7 +119,7 @@ export default async (options) => {
           name: 'needsVitest',
           type: () => (isFeatureFlagsUsed ? null : 'toggle'),
           message: 'Add Vitest for Unit Testing?',
-          initial: false,
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -127,7 +130,7 @@ export default async (options) => {
             answers.needsVitest
               ? 'Add Cypress for End-to-End testing?'
               : 'Add Cypress for both Unit and End-to-End testing?',
-          initial: false,
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -135,7 +138,7 @@ export default async (options) => {
           name: 'needsEslint',
           type: () => (isFeatureFlagsUsed ? null : 'toggle'),
           message: 'Add ESLint for code quality?',
-          initial: false,
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -149,7 +152,31 @@ export default async (options) => {
             return 'toggle'
           },
           message: 'Add Prettier for code formatting?',
-          initial: false,
+          initial: true,
+          active: 'Yes',
+          inactive: 'No',
+        },
+        {
+          name: 'needsStylelint',
+          type: () => (isFeatureFlagsUsed ? null : 'toggle'),
+          message: 'Add StyleLint for code quality?',
+          initial: true,
+          active: 'Yes',
+          inactive: 'No',
+        },
+        {
+          name: 'needsLslint',
+          type: () => (isFeatureFlagsUsed ? null : 'toggle'),
+          message: 'Add LsLint for code quality?',
+          initial: true,
+          active: 'Yes',
+          inactive: 'No',
+        },
+        {
+          name: 'needsPkglint',
+          type: () => (isFeatureFlagsUsed ? null : 'toggle'),
+          message: 'Add PkgLint for code quality?',
+          initial: true,
           active: 'Yes',
           inactive: 'No',
         },
@@ -158,7 +185,7 @@ export default async (options) => {
         onCancel: () => {
           throw new Error(red('✖') + ' Operation cancelled')
         },
-      }
+      },
     )
   } catch (cancelled) {
     console.log(cancelled.message)
@@ -179,6 +206,9 @@ export default async (options) => {
     needsVitest = argv.vitest || argv.tests,
     needsEslint = argv.eslint || argv['eslint-with-prettier'],
     needsPrettier = argv['eslint-with-prettier'],
+    needsStylelint = argv.stylelint,
+    needsLslint = argv.lslint,
+    needsPkglint = argv.pkglint,
   } = result
   const needsCypressCT = needsCypress && !needsVitest
   const root = path.join(cwd, targetDir)
@@ -241,6 +271,18 @@ export default async (options) => {
     }
   }
 
+  if (needsStylelint) {
+    render('stylelint')
+  }
+
+  if (needsLslint) {
+    render('lslint')
+  }
+
+  if (needsPkglint) {
+    render('pkglint')
+  }
+
   // Render ESLint config
   if (needsEslint) {
     renderEslint(root, { needsTypeScript, needsCypress, needsCypressCT, needsPrettier })
@@ -297,7 +339,7 @@ export default async (options) => {
         } else if (path.basename(filepath) === 'jsconfig.json') {
           fs.unlinkSync(filepath)
         }
-      }
+      },
     )
 
     // Rename entry in `index.html`
@@ -314,7 +356,7 @@ export default async (options) => {
         if (filepath.endsWith('.ts')) {
           fs.unlinkSync(filepath)
         }
-      }
+      },
     )
   }
 
@@ -336,7 +378,7 @@ export default async (options) => {
       needsCypress,
       needsCypressCT,
       needsEslint,
-    })
+    }),
   )
 
   console.log('\nDone. Now run:\n')
