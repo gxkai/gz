@@ -46,3 +46,4 @@ storybook-static
 /.idea/gz.iml
 /apps/sites/docs/
 /apps/sites/storybook/
+.idea
