@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "stylelint": "stylelint --config .stylelintrc 'src/**/*.{vue,scss}'",
-    "stylelint:fix": "stylelint --config .stylelintrc --fix 'src/**/*.{vue,scss}'"
+    "lint:stylelint": "stylelint --config .stylelintrc --fix 'src/**/*.{vue,scss}'"
   },
   "devDependencies": {
     "stylelint": "14.3.0"
