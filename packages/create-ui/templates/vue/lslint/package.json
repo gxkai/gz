@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lslint": "ls-lint"
+  },
+  "devDependencies": {
+    "@ls-lint/ls-lint": "1.11.2"
+  }
+}

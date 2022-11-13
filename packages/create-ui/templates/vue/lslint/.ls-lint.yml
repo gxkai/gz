@@ -1,0 +1,6 @@
+#  https://ls-lint.org/1.x/configuration/the-rules.html#overview
+ls:
+  .dir: kebab-case
+ignore:
+  - .git
+  - node_modules
