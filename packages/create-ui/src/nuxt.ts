@@ -80,7 +80,7 @@ export default async (options) => {
         onCancel: () => {
           throw new Error(red('✖') + ' Operation cancelled')
         },
-      }
+      },
     )
   } catch (cancelled) {
     console.log(cancelled.message)

@@ -28,6 +28,6 @@ export function emptyDir(dir) {
   postOrderDirectoryTraverse(
     dir,
     (dir) => fs.rmdirSync(dir),
-    (file) => fs.unlinkSync(file)
+    (file) => fs.unlinkSync(file),
   )
 }

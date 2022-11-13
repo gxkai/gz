@@ -74,7 +74,7 @@ ${getCommand(packageManager, 'test:unit')}
 \`\`\`sh
 ${getCommand(packageManager, 'test:unit')} # or \`${getCommand(
   packageManager,
-  'test:unit:ci'
+  'test:unit:ci',
 )}\` for headless testing
 \`\`\`
 `
@@ -88,7 +88,7 @@ ${getCommand(packageManager, 'test:unit')} # or \`${getCommand(
 ${getCommand(packageManager, 'build')}
 ${getCommand(packageManager, 'test:e2e')} # or \`${getCommand(
   packageManager,
-  'test:e2e:ci'
+  'test:e2e:ci',
 )}\` for headless testing
 \`\`\`
 `

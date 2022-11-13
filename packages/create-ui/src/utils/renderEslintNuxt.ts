@@ -74,7 +74,7 @@ function configureEslint({ language, styleGuide, needsPrettier, needsCypress, ne
 
 export default function renderEslint(
   rootDir,
-  { needsTypeScript, needsCypress, needsCypressCT, needsPrettier }
+  { needsTypeScript, needsCypress, needsCypressCT, needsPrettier },
 ) {
   const { dependencies, configuration } = configureEslint({
     language: needsTypeScript ? 'typescript' : 'javascript',
@@ -97,7 +97,7 @@ export default function renderEslint(
           : 'eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore',
       },
       devDependencies: dependencies,
-    })
+    }),
   )
 
   fs.writeFileSync(packageJsonPath, JSON.stringify(pkg, null, 2) + '\n')

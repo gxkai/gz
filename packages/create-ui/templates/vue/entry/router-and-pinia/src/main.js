@@ -6,6 +6,7 @@ import router from './router'
 
 // css
 import './assets/base.css'
+import 'uno.css'
 
 import icons from './icons'
 

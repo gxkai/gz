@@ -30,14 +30,14 @@ const config: ESLintConfig = {
 
 function configureEslint({ language, styleGuide, needsPrettier, needsCypress, needsCypressCT }) {
   switch (`${styleGuide}-${language}`) {
-  case 'default-javascript':
-    config.extends.push('eslint:recommended')
-    break
-  case 'default-typescript':
-    addEslintDependency('@vue/eslint-config-typescript')
-    config.extends.push('eslint:recommended')
-    config.extends.push('@vue/eslint-config-typescript/recommended')
-    break
+    case 'default-javascript':
+      config.extends.push('eslint:recommended')
+      break
+    case 'default-typescript':
+      addEslintDependency('@vue/eslint-config-typescript')
+      config.extends.push('eslint:recommended')
+      config.extends.push('@vue/eslint-config-typescript/recommended')
+      break
     // TODO: airbnb and standard
   }
 
@@ -64,10 +64,10 @@ function configureEslint({ language, styleGuide, needsPrettier, needsCypress, ne
   // generate the configuration file
   let configuration = '/* eslint-env node */\n'
 
-  if (styleGuide !== 'default' || language !== 'javascript' || needsPrettier) {
-    addEslintDependency('@rushstack/eslint-patch')
-    configuration += 'require("@rushstack/eslint-patch/modern-module-resolution");\n\n'
-  }
+  // if (styleGuide !== 'default' || language !== 'javascript' || needsPrettier) {
+  //   addEslintDependency('@rushstack/eslint-patch')
+  //   configuration += 'require("@rushstack/eslint-patch/modern-module-resolution");\n\n'
+  // }
   configuration += `module.exports = ${JSON.stringify(config, undefined, 2)}\n`
 
   return {
@@ -78,7 +78,7 @@ function configureEslint({ language, styleGuide, needsPrettier, needsCypress, ne
 
 export default function renderEslint(
   rootDir,
-  { needsTypeScript, needsCypress, needsCypressCT, needsPrettier }
+  { needsTypeScript, needsCypress, needsCypressCT, needsPrettier },
 ) {
   const { dependencies, configuration } = configureEslint({
     language: needsTypeScript ? 'typescript' : 'javascript',
@@ -101,7 +101,7 @@ export default function renderEslint(
           : 'eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore',
       },
       devDependencies: dependencies,
-    })
+    }),
   )
 
   fs.writeFileSync(packageJsonPath, JSON.stringify(pkg, null, 2) + '\n')

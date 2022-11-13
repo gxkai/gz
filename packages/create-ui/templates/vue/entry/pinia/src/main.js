@@ -5,6 +5,7 @@ import App from './App.vue'
 
 // css
 import './assets/base.css'
+import 'uno.css'
 
 import icons from './icons'
 
