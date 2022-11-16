@@ -13,7 +13,7 @@
     "start:nuxt-app": "turbo run start --filter nuxt-app",
     "start:storybook": "turbo run start --filter storybook",
     "lint": "turbo run lint",
-    "test": "turbo run test --filter vitest",
+    "test": "turbo run test",
     "test:watch": "vitest -w --dir",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "simple-git-hooks",
