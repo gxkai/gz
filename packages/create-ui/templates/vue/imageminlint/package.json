@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "imagemin-lint-staged": "0.4.0"
+  }
+}

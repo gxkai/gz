@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import UI, { colors } from '@guzh/ui'
 import App from './App.vue'
-import router from './router'
+import { router } from './router'
 
 // css
 import './assets/base.css'

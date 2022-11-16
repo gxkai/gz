@@ -96,7 +96,7 @@ export default function renderEslint(
     deepMerge(existingPkg, {
       scripts: {
         // Note that we reuse .gitignore here to avoid duplicating the configuration
-        lint: needsTypeScript
+        'lint:eslint': needsTypeScript
           ? 'eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore'
           : 'eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore',
       },

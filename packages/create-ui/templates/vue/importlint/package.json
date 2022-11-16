@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "lint:importlint": "import-sort --write \"src/**/*{.js,.ts,.vue}\""
+  },
+  "devDependencies": {
+    "import-sort": "6.0.0",
+    "import-sort-cli": "6.0.0",
+    "import-sort-config": "6.0.0",
+    "import-sort-parser-babylon": "6.0.0",
+    "import-sort-parser-typescript": "6.0.0",
+    "import-sort-style-eslint": "6.0.0"
+  }
+}

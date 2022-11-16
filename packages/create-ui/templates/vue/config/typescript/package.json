@@ -1,7 +1,10 @@
 {
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
-    "typecheck": "vue-tsc --noEmit"
+    "lint:types": "vue-tsc --noEmit",
+    "build:spa": "pnpm build && pnpm gen-types",
+    "build:lib": "vite build --config ./vite.config.lib.ts && pnpm gen-types",
+    "gen-types": "vue-tsc --declaration --emitDeclarationOnly -p tsconfig.vitest.json --composite false"
   },
   "devDependencies": {
     "@types/node": "^16.11.27",

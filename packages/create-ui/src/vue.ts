@@ -32,6 +32,10 @@ export default async (options) => {
     needsStylelint?: boolean
     needsLslint?: boolean
     needsPkglint?: boolean
+    needsImportlint?: boolean
+    needsImageminlint?: boolean
+    needsCommitlint?: boolean
+    needsMarkdownlint?: boolean
   } = {}
 
   try {
@@ -180,6 +184,30 @@ export default async (options) => {
           active: 'Yes',
           inactive: 'No',
         },
+        {
+          name: 'needsImportlint',
+          type: () => (isFeatureFlagsUsed ? null : 'toggle'),
+          message: 'Add ImportLint for code quality?',
+          initial: true,
+          active: 'Yes',
+          inactive: 'No',
+        },
+        {
+          name: 'needsImageminlint',
+          type: () => (isFeatureFlagsUsed ? null : 'toggle'),
+          message: 'Add imageminLint for code quality?',
+          initial: true,
+          active: 'Yes',
+          inactive: 'No',
+        },
+        {
+          name: 'needsMarkdownlint',
+          type: () => (isFeatureFlagsUsed ? null : 'toggle'),
+          message: 'Add markdownlint for code quality?',
+          initial: true,
+          active: 'Yes',
+          inactive: 'No',
+        },
       ],
       {
         onCancel: () => {
@@ -209,6 +237,10 @@ export default async (options) => {
     needsStylelint = argv.stylelint,
     needsLslint = argv.lslint,
     needsPkglint = argv.pkglint,
+    needsImportlint = argv.importlint,
+    needsImageminlint = argv.imageminlint,
+    needsCommitlint = argv.commitlint,
+    needsMarkdownlint = argv.markdownlint,
   } = result
   const needsCypressCT = needsCypress && !needsVitest
   const root = path.join(cwd, targetDir)
@@ -281,6 +313,22 @@ export default async (options) => {
 
   if (needsPkglint) {
     render('pkglint')
+  }
+
+  if (needsImportlint) {
+    render('importlint')
+  }
+
+  if (needsImageminlint) {
+    render('imageminlint')
+  }
+
+  if (needsCommitlint) {
+    render('commitlint')
+  }
+
+  if (needsMarkdownlint) {
+    render('markdownlint')
   }
 
   // Render ESLint config

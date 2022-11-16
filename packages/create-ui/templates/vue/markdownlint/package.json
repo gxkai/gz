@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint:markdownlint": "markdownlint --config .markdownlint.json --fix \"**/*.md\""
+  },
+  "devDependencies": {
+    "markdownlint-cli": "0.32.2"
+  }
+}
