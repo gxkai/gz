@@ -1,0 +1,3 @@
+{
+  "extends": ["@guzh/stylelint-config-base"]
+}

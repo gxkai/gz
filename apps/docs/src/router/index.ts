@@ -65,7 +65,7 @@ const routes: RouteRecordRaw[] = [{
   component: PlayPage,
 }]
 
-const router = createRouter({
+export const router = createRouter({
   history: createWebHistory(config.basePath),
   routes,
   scrollBehavior(to, from, savedPosition) {
@@ -76,5 +76,3 @@ const router = createRouter({
     }
   },
 })
-
-export default router

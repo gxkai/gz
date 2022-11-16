@@ -1,0 +1,50 @@
+{
+  "name": "@guzh/auth",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview --port 5050",
+    "test:unit": "vitest --environment jsdom",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "build": "vite build --config ./vite.config.lib.ts && && pnpm gen-types",
+    "gen-types": "vue-tsc --declaration --emitDeclarationOnly -p tsconfig.vitest.json --composite false"
+  },
+  "files": [
+    "dist",
+    "src",
+    "*.d.ts",
+    "README.md"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "dependencies": {
+    "pinia": "^2.0.13",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14",
+    "@guzh/core": "latest"
+  },
+  "devDependencies": {
+    "@guzh/ui": "latest",
+    "@types/jsdom": "^16.2.14",
+    "@types/node": "^16.11.27",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vitejs/plugin-vue-jsx": "^1.3.10",
+    "@vue/test-utils": "^2.0.0-rc.20",
+    "@vue/tsconfig": "^0.1.3",
+    "autoprefixer": "^10.4.7",
+    "jsdom": "^19.0.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "typescript": "~4.6.3",
+    "vite": "3.2.3",
+    "vitest": "^0.9.3",
+    "vue-tsc": "^0.34.7"
+  }
+}

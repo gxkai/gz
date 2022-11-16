@@ -1,8 +1,0 @@
-{
-  "baseUrl": "http://localhost:3001",
-  "component": {
-    "componentFolder": "../ui/src",
-    "testFiles": "**/__tests__/*.spec.{js,ts,jsx,tsx}"
-  },
-  "projectId": "hhz125"
-}

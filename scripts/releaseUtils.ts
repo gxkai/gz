@@ -23,6 +23,8 @@ export const apps = [
   'nuxt-app',
   'storybook',
   'docs',
+  'admin',
+  'auth',
 ]
 
 export const realPackages = [
@@ -35,6 +37,7 @@ export const realPackages = [
   'stylelint-config-base',
   'tsconfig',
   'css-preset',
+  'core',
 ]
 export const packages = [
   ...apps,

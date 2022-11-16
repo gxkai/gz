@@ -6,7 +6,11 @@
     "composite": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@core": ["../core/src"],
+      "@core/*": ["../core/src/*"],
+      "@auth": ["../auth/src"],
+      "@auth/*": ["../auth/src/*"],
     }
   }
 }
