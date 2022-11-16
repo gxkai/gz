@@ -2,7 +2,7 @@
   "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["@guzh/css-preset#stub","^build"],
       "outputs": ["dist/**", ".nuxt/**", ".output/**"]
     },
     "test": {
