@@ -21,9 +21,8 @@ import WelcomeItem from './WelcomeItem.vue'
     <template #heading>Tooling</template>
 
     This project is served and bundled with
-    <x-link shadow color="emerald" href="https://vitejs.dev/guide/features.html" target="_blank">Vite</x-link>. The
-    recommended IDE setup is
-    <x-link shadow color="emerald" href="https://code.visualstudio.com/" target="_blank">VSCode</x-link> +
+    <x-link shadow color="emerald" href="https://vitejs.dev/guide/features.html" target="_blank">Vite</x-link>. The recommended IDE
+    setup is <x-link shadow color="emerald" href="https://code.visualstudio.com/" target="_blank">VSCode</x-link> +
     <x-link shadow color="emerald" href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</x-link>.
   </WelcomeItem>
 

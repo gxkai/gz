@@ -20,6 +20,8 @@ const router = createRouter({
 })
 const core = new Core({ router, store, app })
 
+// @ts-expect-error ...
+window.ctx = core
 const init = async () => {
   app.use(UI, {
     prefix: 'X',

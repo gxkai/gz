@@ -18,7 +18,8 @@
     "pinia": "^2.0.13",
     "vue": "^3.2.33",
     "vue-router": "^4.0.14",
-    "@guzh/core": "latest"
+    "@guzh/core": "latest",
+    "@guzh/home": "latest"
   },
   "devDependencies": {
     "@guzh/eslint-config-vue": "latest",
