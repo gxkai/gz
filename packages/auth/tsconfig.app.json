@@ -6,9 +6,6 @@
     "composite": true,
     "outDir": "dist",
     "baseUrl": ".",
-    "paths": {
-      "@core": ["../core/src"],
-      "@core/*": ["../core/src/*"],
-    }
+    "paths": {}
   }
 }

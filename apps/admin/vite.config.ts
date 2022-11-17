@@ -16,4 +16,7 @@ export default defineConfig({
       '@auth': fileURLToPath(new URL('../auth/src', import.meta.url)),
     },
   },
+  build: {
+    outDir: '../sites/admin',
+  },
 })

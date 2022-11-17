@@ -24,7 +24,6 @@ export const apps = [
   'storybook',
   'docs',
   'admin',
-  'auth',
 ]
 
 export const realPackages = [
@@ -38,6 +37,7 @@ export const realPackages = [
   'tsconfig',
   'css-preset',
   'core',
+  'auth',
 ]
 export const packages = [
   ...apps,
