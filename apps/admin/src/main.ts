@@ -9,8 +9,8 @@ import 'uno.css'
 
 import icons from './icons'
 import { Core } from '@guzh/core'
-import { Auth } from '@guzh/auth'
 import { createWebHistory, createRouter } from 'vue-router'
+import { config } from '@/config'
 
 const app = createApp(App)
 const store = createPinia()
@@ -21,7 +21,6 @@ const router = createRouter({
 const core = new Core({ router, store, app })
 
 const init = async () => {
-  core.registerBatch([Auth])
   app.use(UI, {
     prefix: 'X',
     icons,
@@ -42,3 +41,12 @@ const init = async () => {
 }
 
 init()
+// GitHub Pages redirect hack for crawler-friendly SPAs
+let { redirect } = sessionStorage
+
+delete sessionStorage.redirect
+if (redirect && redirect !== location.pathname) {
+  redirect = redirect.replace(config.basePath, '/')
+
+  router.replace(redirect)
+}
