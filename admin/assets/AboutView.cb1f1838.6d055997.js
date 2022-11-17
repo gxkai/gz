@@ -1,1 +1,0 @@
-import{o as r,c as s}from"./index.82f7c93e.js";const a=(o,n)=>{const t=o.__vccOpts||o;for(const[e,c]of n)t[e]=c;return t},u={};function f(o,n){return r(),s("h1",null,"This is an about page")}const p=a(u,[["render",f]]);export{p as default};
