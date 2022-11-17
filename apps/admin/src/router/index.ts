@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import {config} from "@/config";
+import { config } from '@/config'
 
 export const router = createRouter({
   history: createWebHistory(config.basePath),
